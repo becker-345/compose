@@ -1,19 +1,18 @@
 {
-  "name": "Android Compose Clean Env",
+  "name": "Android Compose Stable Env",
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
-    "ghcr.io/devcontainers/features/android:1": {}
+    "ghcr.io/devcontainers-contrib/features/android-sdk:1": {
+      "compileSdkVersion": "34",
+      "buildToolsVersion": "34.0.0"
+    }
   },
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack",
-        "mathiasfrohlich.Kotlin",
-        "naco-siren.gradle-language"
-      ],
-      "settings": {
-        "java.jdt.ls.java.home": "/usr/local/sdkman/candidates/java/current"
-      }
+        "mathiasfrohlich.Kotlin"
+      ]
     }
   }
 }
