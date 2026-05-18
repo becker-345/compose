@@ -8,6 +8,9 @@
   "postCreateCommand": "mkdir -p ~/android-sdk/cmdline-tools && wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O ~/android-sdk/cmdline-tools/tools.zip && unzip -q ~/android-sdk/cmdline-tools/tools.zip -d ~/android-sdk/cmdline-tools && mv ~/android-sdk/cmdline-tools/cmdline-tools ~/android-sdk/cmdline-tools/latest && rm ~/android-sdk/cmdline-tools/tools.zip && yes | ~/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses > /dev/null && ~/android-sdk/cmdline-tools/latest/bin/sdkmanager \"platforms;android-34\" \"build-tools;34.0.0\" \"platform-tools\" && bash .devcontainer/rename.sh",
   "customizations": {
     "vscode": {
+      "settings": {
+        "explorer.compactFolders": false
+      },
       "extensions": [
         "vscjava.vscode-java-pack",
         "mathiasfrohlich.Kotlin"
